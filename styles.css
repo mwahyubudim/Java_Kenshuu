@@ -57,26 +57,19 @@ header .close-button:hover {
 
 .search-form {
     display: flex;
-    flex-direction: column;
-}
-
-.search-row {
-    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.search-row input[type="text"] {
-    margin: 5px 0;
+.search-form input[type="text"] {
+    margin-right: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 32%;
 }
 
-.search-form input[type="submit"],
-.action-container button {
-    width: 100%;
+.search-form input[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -87,17 +80,30 @@ header .close-button:hover {
 .search-form input[type="submit"] {
     background-color: #4CAF50;
     color: white;
-    margin-top: 10px;
 }
 
 .search-form input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+.action-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.action-container button.add-button,
+.action-container button.delete-button {
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 .action-container button.add-button {
     background-color: #87CEEB;
     color: white;
-    margin-top: 10px;
 }
 
 .action-container button.add-button:hover {
@@ -107,7 +113,6 @@ header .close-button:hover {
 .action-container button.delete-button {
     background-color: #FF6347;
     color: white;
-    margin-top: 10px;
 }
 
 .action-container button.delete-button:hover {

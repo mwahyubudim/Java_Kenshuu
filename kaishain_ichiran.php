@@ -22,9 +22,9 @@ include('config.php');
         <div class="search-container">
             <form class="search-form" method="POST">
                 <div class="search-row">
-                    <p>社員ID: <input type="text" name="search_id" maxlength="10"></p>
-                    <p>所属: <input type="text" name="search_dept" maxlength="10"></p>
-                    <p>入社年月日: <input type="text" name="search_date" maxlength="10" placeholder="YYYY/MM/DD"></p>
+                    社員ID: <input type="text" name="search_id" maxlength="10">
+                    所属: <input type="text" name="search_dept" maxlength="10">
+                    入社年月日: <input type="text" name="search_date" maxlength="10" placeholder="YYYY/MM/DD">
                 </div>
                 <input type="submit" name="search" value="検索">
             </form>
