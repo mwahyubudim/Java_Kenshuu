@@ -4,6 +4,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>社員情報追加</title>
 </head>
 <body>
